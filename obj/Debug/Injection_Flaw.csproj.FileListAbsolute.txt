@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\bin\Debug\Injection_Flaw.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\bin\Debug\Injection_Flaw.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\bin\Debug\Injection_Flaw.pdb
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\obj\Debug\Injection_Flaw.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\obj\Debug\Injection_Flaw.exe
+C:\Users\Administrator\Documents\Visual Studio 2017\Projects\Injection_Flaw\Injection_Flaw\obj\Debug\Injection_Flaw.pdb
