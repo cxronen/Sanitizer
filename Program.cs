@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Compania.MakeSafe;
 
 namespace Injection_Flaw
 {
@@ -19,9 +20,7 @@ namespace Injection_Flaw
 
         static String makeSafe(String s)
         {
-            if (s.ToUpper().Equals("NOTEPAD.EXE"))
-                return s;
-            return null;
+            return Compania.MakeSafe(s);
         }
 		
 		static void execProgram(String command) {
