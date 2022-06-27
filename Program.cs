@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +12,9 @@ namespace Injection_Flaw
         {
             Console.Write("Type a command:  ");
             String cmd = Console.ReadLine();
-            System.Diagnostics.Process.Start(makeSafe(cmd));
+			cmd = makeSafe(cmd);
+			execProgram(cmd);
 
-            if(isSafe(cmd))
-                System.Diagnostics.Process.Start(cmd);
         }//end Main
 
         static String makeSafe(String s)
@@ -24,11 +23,14 @@ namespace Injection_Flaw
                 return s;
             return null;
         }
-        static bool isSafe(String s)
-        {
-            if (s.ToUpper().Equals("NOTEPAD.EXE"))
-                return true;
-            return false;
-        }//end isSafe
+		
+		static void execProgram(String command) {
+			
+			ProcessStartInfo procStartInfo = new ProcessStartInfo("cmd", "/c " + command);
+			Process process = new Process()			
+			process.StartInfo = procStartInfo;
+			process.Start(command);
+		}
+		
     }//end Program
 }//end Injection_Flaw
